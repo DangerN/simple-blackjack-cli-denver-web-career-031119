@@ -53,6 +53,8 @@ end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
+  prompt_user
 end
 
 #####################################################
@@ -61,5 +63,11 @@ end
 
 def runner
   # code runner here
+  welcome
+  cardtotal = initial_round
+  while cardtotal < 21 do
+    cardtotal = hit?(cardtotal)
+  end
+  end_game
 end
     
