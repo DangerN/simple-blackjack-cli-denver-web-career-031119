@@ -68,6 +68,6 @@ def runner
   while cardtotal < 21 do
     cardtotal = hit?(cardtotal)
   end
-  end_game
+  end_game(cardtotal)
 end
     
