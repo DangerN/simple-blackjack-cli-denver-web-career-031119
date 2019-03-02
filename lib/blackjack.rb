@@ -39,7 +39,8 @@ def hit?
   # code hit? here
   prompt_user
   input = get_user_input
-  if 
+  case input
+  when 
 end
 
 def invalid_command
